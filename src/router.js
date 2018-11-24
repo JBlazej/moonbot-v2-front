@@ -12,7 +12,8 @@ const img4 = path.join(__dirname, '../public/assets/images/front/', 'iVSE.png')
 const img5 = path.join(__dirname, '../public/assets/images/front/', 'iHACKER.png ')
 const img6 = path.join(__dirname, '../public/assets/images/front/', 'iFIS.png')
 const img7 = path.join(__dirname, '../public/assets/images/front/', 'moonlogo.png')
- 
+const img8 = path.join(__dirname, '../public/assets/images/front/', 'frontSpace.png')
+
  
 // Source https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#usinges7asyncawait
 // const wrap = fn => (...args) => fn(...args).catch(args[2])
@@ -54,6 +55,10 @@ router.get('/img6', (req, res) => {
 
 router.get('/img7', (req, res) => {
     res.status(200).sendFile(img7)
+})
+
+router.get('/img8', (req, res) => {
+    res.status(200).sendFile(img8)
 })
 
 export default router

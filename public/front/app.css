@@ -93,7 +93,7 @@ html,body{
 }
 
 .welcome{
-  background-image: url("../assets/images/front/frontSpace.png");
+  background-image: url("https://moonbot-front.herokuapp.com/img8");
   background-repeat: no-repeat;
   width: 100%;
 
@@ -101,13 +101,13 @@ html,body{
 
 @media only screen and (max-width: 1280px) {
     .welcome {
-        background-image: url("../assets/images/front/frontSpaceTablet.png");
+        background-image: url("https://moonbot-front.herokuapp.com/img8");
     }
 }
 
 @media only screen and (max-width: 776px) {
     .welcome {
-        background-image: url("../assets/images/front/frontSpaceMobile.png");
+        background-image: url("https://moonbot-front.herokuapp.com/img8");
     }
 }
 
