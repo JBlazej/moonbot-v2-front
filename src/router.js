@@ -5,13 +5,13 @@ import path from 'path'
 const htmlPath = path.join(__dirname, '../public/front/', 'index.html')
 const css = path.join(__dirname, '../public/front/', 'app.css')
 
-const img1 = path.join(__dirname, '../public/front/', 'singlePhone2.png')
-const img2 = path.join(__dirname, '../public/front/', 'earth.png')
-const img3 = path.join(__dirname, '../public/front/', 'mcProNew.png')
-const img4 = path.join(__dirname, '../public/front/', 'iVSE.png')
-const img5 = path.join(__dirname, '../public/front/', 'iHACKER.png ')
-const img6 = path.join(__dirname, '../public/front/', 'iFIS.png')
-const img7 = path.join(__dirname, '../public/front/', 'moonlogo.png')
+const img1 = path.join(__dirname, '../public/assets/images/front/', 'singlePhone2.png')
+const img2 = path.join(__dirname, '../public/assets/images/front/', 'earth.png')
+const img3 = path.join(__dirname, '../public/assets/images/front/', 'mcProNew.png')
+const img4 = path.join(__dirname, '../public/assets/images/front/', 'iVSE.png')
+const img5 = path.join(__dirname, '../public/assets/images/front/', 'iHACKER.png ')
+const img6 = path.join(__dirname, '../public/assets/images/front/', 'iFIS.png')
+const img7 = path.join(__dirname, '../public/assets/images/front/', 'moonlogo.png')
  
  
 // Source https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#usinges7asyncawait
