@@ -15,6 +15,13 @@ const img7 = path.join(__dirname, '../public/assets/images/front/', 'moonlogo.pn
 const img8 = path.join(__dirname, '../public/assets/images/front/', 'frontSpace.png')
 const img9 = path.join(__dirname, '../public/assets/images/front/', 'iSpace.png')
 
+const lightsliderJS = path.join(__dirname, '../public/front/js/', 'lightslider.js')
+const lightsliderCSS = path.join(__dirname, '../public/front/css/', 'lightslider.css')
+
+const changePhone = path.join(__dirname, '../public/front/js/', 'changePhone.js')
+const scrollAnimation = path.join(__dirname, '../public/front/js/', 'scrollAnimation.js')
+const iphoneSlider = path.join(__dirname, '../public/front/js/', 'iphoneSlider.js')
+
  
 // Source https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#usinges7asyncawait
 // const wrap = fn => (...args) => fn(...args).catch(args[2])
@@ -24,6 +31,25 @@ const router = Router()
 // HOME
 router.get('/', (req, res) => {
     res.status(200).sendFile(htmlPath)
+})
+
+router.get('/changePhone', (req, res) => {
+    res.status(200).sendFile(changePhone)
+})
+
+router.get('/scrollAnimation', (req, res) => {
+    res.status(200).sendFile(scrollAnimation)
+})
+
+router.get('/iphoneSlider', (req, res) => {
+    res.status(200).sendFile(iphoneSlider)
+})
+
+router.get('/lightsliderjs', (req, res) => {
+    res.status(200).sendFile(lightsliderJS)
+})
+router.get('/lightslidercss', (req, res) => {
+    res.status(200).sendFile(lightsliderCSS)
 })
 
 router.get('/css', (req, res) => {
