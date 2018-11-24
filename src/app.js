@@ -14,7 +14,7 @@ const app = express()
  * Setup Express server.
  */
 // SSL
-
+// Ahoj
 app.use('/public', express.static(__dirname + '../public'))
 // BODY
 app.use(bodyParser.json())
