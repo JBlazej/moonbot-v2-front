@@ -162,20 +162,9 @@ html,body{
   margin: 0 auto;
   margin-top: 60px;
   background-repeat: no-repeat;
-  background-image: url("../assets/images/front/iSpace.png");
+  background-image: url("https://moonbot-front.herokuapp.com/img9");
 
 }
-
-.iphone-screenshot-mod{
-  display: block;
-  height: 500px;
-  width: 500px;
-  margin: 0 auto;
-  margin-top: 60px;
-  background-image: url("../assets/images/front/iSpaceBlack.png");
-
-}
-
 
 
 @media only screen and (max-width: 776px) {
