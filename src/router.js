@@ -18,6 +18,8 @@ const img9 = path.join(__dirname, '../public/assets/images/front/', 'iSpace.png'
 const moon = path.join(__dirname, '../public/', 'moon-emoji.png')
 const rocket = path.join(__dirname, '../public/', 'rocket-emoji.png')
 
+const privacy = path.join(__dirname, '../public/front/', 'privacy-policy.html')
+
 const lightsliderJS = path.join(__dirname, '../public/front/js/', 'lightslider.js')
 const lightsliderCSS = path.join(__dirname, '../public/front/css/', 'lightslider.css')
 
@@ -38,6 +40,10 @@ router.get('/', (req, res) => {
 
 router.get('/moon', (req, res) => {
     res.status(200).sendFile(moon)
+})
+
+router.get('/privacy-policy', (req, res) => {
+    res.status(200).sendFile(privacy)
 })
 
 router.get('/rocket', (req, res) => {

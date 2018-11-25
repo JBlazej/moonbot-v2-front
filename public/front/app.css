@@ -559,3 +559,16 @@ input[type=text]:focus, input[type=password]:focus{
   float:left;
   display: block;
 }
+
+
+.privacy-police p{
+  text-align: left !important;
+  font-size: 19px;
+  margin-bottom: 30px;
+  color: #3F3F40;
+  text-align: left;
+  letter-spacing: 4px;
+  line-height: 28px;
+  margin: 0 0 12px;
+
+}
