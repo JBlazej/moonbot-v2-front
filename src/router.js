@@ -15,8 +15,8 @@ const img7 = path.join(__dirname, '../public/assets/images/front/', 'moonlogo.pn
 const img8 = path.join(__dirname, '../public/assets/images/front/', 'frontSpace.png')
 const img9 = path.join(__dirname, '../public/assets/images/front/', 'iSpace.png')
 
-const moon = path.join(__dirname, '../public/', 'moon-emoji.png')
-const rocket = path.join(__dirname, '../public/', 'rocket-emoji.png')
+const moon = path.join(__dirname, '../public/', 'moon.png')
+const rocket = path.join(__dirname, '../public/', 'rocket.png')
 
 const privacy = path.join(__dirname, '../public/front/', 'privacy-policy.html')
 
@@ -38,7 +38,7 @@ router.get('/', (req, res) => {
     res.status(200).sendFile(htmlPath)
 })
 
-router.get('/moon', (req, res) => {
+router.get('/moons', (req, res) => {
     res.status(200).sendFile(moon)
 })
 
@@ -46,7 +46,7 @@ router.get('/privacy-policy', (req, res) => {
     res.status(200).sendFile(privacy)
 })
 
-router.get('/rocket', (req, res) => {
+router.get('/rockets', (req, res) => {
     res.status(200).sendFile(rocket)
 })
 
