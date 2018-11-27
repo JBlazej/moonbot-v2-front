@@ -16,7 +16,7 @@ const img7 = path.join(__dirname, '../public/assets/images/front/', 'moonlogo.pn
 const img8 = path.join(__dirname, '../public/assets/images/front/', 'frontSpace.png')
 const img9 = path.join(__dirname, '../public/assets/images/front/', 'iSpace.png')
 
-const anime = path.join(__dirname, '../public/assets/images/front/', 'singlePhoneAnimation')
+const anime = path.join(__dirname, '../public/assets/images/front/', 'singlePhoneAnimation.png')
 
 const moon = path.join(__dirname, '../public/', 'moon.png')
 const moon2 = path.join(__dirname, '../public/', 'moon-emoji.png')
