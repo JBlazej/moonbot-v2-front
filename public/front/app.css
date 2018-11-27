@@ -217,7 +217,14 @@ html,body{
       opacity: 1;
       cursor: pointer;
 
-    }
+}
+
+@media only screen and (max-width: 790px) {
+  .one-post .half-block .single-phone {
+    padding-left: 27px;
+  }
+}
+    
 
 /*Design*/
 /*----------------------------------------------------------------------------*/
