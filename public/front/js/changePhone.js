@@ -16,11 +16,11 @@ $('.single-phone').on({
 
 
       if (status === 'false'){
-        $( '.single-phone' ).attr('src','../assets/images/front/singlePhoneAnimation.png');
+        $( '.single-phone' ).attr('src','https://moonbot-v2-front.herokuapp.com/anime');
         status = true;
         open.play();
       } else{
-        $( '.single-phone' ).attr('src','../assets/images/front/singlePhone2.png');
+        $( '.single-phone' ).attr('src','https://moonbot-v2-front.herokuapp.com/img1');
         status = false;
         close.play();
       }

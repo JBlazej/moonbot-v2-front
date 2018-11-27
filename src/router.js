@@ -1,6 +1,7 @@
 import {Router} from 'express'
 //import requireDir from 'require-dir'
 import path from 'path'
+import { compileFunction } from 'vm';
 
 const htmlPath = path.join(__dirname, '../public/front/', 'index.html')
 const css = path.join(__dirname, '../public/front/', 'app.css')
@@ -15,6 +16,8 @@ const img7 = path.join(__dirname, '../public/assets/images/front/', 'moonlogo.pn
 const img8 = path.join(__dirname, '../public/assets/images/front/', 'frontSpace.png')
 const img9 = path.join(__dirname, '../public/assets/images/front/', 'iSpace.png')
 
+const anime = path.join(__dirname, '../public/assets/images/front/', 'singlePhoneAnimation')
+
 const moon = path.join(__dirname, '../public/', 'moon.png')
 const moon2 = path.join(__dirname, '../public/', 'moon-emoji.png')
 const rocket = path.join(__dirname, '../public/', 'rocket.png')
@@ -28,6 +31,11 @@ const changePhone = path.join(__dirname, '../public/front/js/', 'changePhone.js'
 const scrollAnimation = path.join(__dirname, '../public/front/js/', 'scrollAnimation.js')
 const iphoneSlider = path.join(__dirname, '../public/front/js/', 'iphoneSlider.js')
 
+const iphoneIntro = path.join(__dirname, '../public/assets/images/front/', 'iphone-intro.png')
+const iphone1 = path.join(__dirname, '../public/assets/images/front/', 'iphone-1.png')
+const iphone2 = path.join(__dirname, '../public/assets/images/front/', 'iphone-2.png')
+const iphone3 = path.join(__dirname, '../public/assets/images/front/', 'iphone-3.png')
+const mac = path.join(__dirname, '../public/assets/images/front/', 'macbook.png')
  
 // Source https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#usinges7asyncawait
 // const wrap = fn => (...args) => fn(...args).catch(args[2])
@@ -37,6 +45,39 @@ const router = Router()
 // HOME
 router.get('/', (req, res) => {
     res.status(200).sendFile(htmlPath)
+})
+
+router.get('/anime', (req, res) => {
+    res.status(200).sendFile(anime)
+})
+
+router.get('/iphone-intro', (req, res) => {
+    res.status(200).sendFile(iphoneIntro)
+})
+
+router.get('/iphone-1', (req, res) => {
+    res.status(200).sendFile(iphone1)
+})
+
+router.get('/iphone-2', (req, res) => {
+    res.status(200).sendFile(iphone2)
+})
+
+router.get('/iphone-3', (req, res) => {
+    res.status(200).sendFile(iphone3)
+})
+
+router.get('/macbook', (req, res) => {
+    res.status(200).sendFile(mac)
+})
+
+
+router.get('/moons', (req, res) => {
+    res.status(200).sendFile(moon)
+})
+
+router.get('/moons', (req, res) => {
+    res.status(200).sendFile(moon)
 })
 
 router.get('/moons', (req, res) => {
