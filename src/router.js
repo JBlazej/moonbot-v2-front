@@ -36,6 +36,9 @@ const iphone1 = path.join(__dirname, '../public/assets/images/front/', 'iphone-1
 const iphone2 = path.join(__dirname, '../public/assets/images/front/', 'iphone-2.png')
 const iphone3 = path.join(__dirname, '../public/assets/images/front/', 'iphone-3.png')
 const mac = path.join(__dirname, '../public/assets/images/front/', 'macbook.png')
+
+const closeSound = path.join(__dirname, '../public/assets/sounds/', 'closeIP.mp3')
+const openSound = path.join(__dirname, '../public/assets/sounds/', 'openIP.mp3')
  
 // Source https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#usinges7asyncawait
 // const wrap = fn => (...args) => fn(...args).catch(args[2])
@@ -49,6 +52,14 @@ router.get('/', (req, res) => {
 
 router.get('/anime', (req, res) => {
     res.status(200).sendFile(anime)
+})
+
+router.get('/close', (req, res) => {
+    res.status(200).sendFile(closeSound)
+})
+
+router.get('/open', (req, res) => {
+    res.status(200).sendFile(openSound)
 })
 
 router.get('/iphone-intro', (req, res) => {

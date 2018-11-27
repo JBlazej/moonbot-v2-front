@@ -3,13 +3,13 @@ var status = false;
 $('.single-phone').on({
     click: function(){
       var open = document.createElement("audio");
-        open.src="../assets/sounds/openIP.mp3";
+        open.src="https://moonbot-v2-front.herokuapp.com/open";
         open.volume=0.85;
         open.autoPlay=false;
         open.preLoad=true;
 
       var close = document.createElement("audio");
-        close.src="../assets/sounds/closeIP.mp3";
+        close.src="https://moonbot-v2-front.herokuapp.com/close";
         close.volume=0.85;
         close.autoPlay=false;
         close.preLoad=true;
