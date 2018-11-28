@@ -1,13 +1,9 @@
 import {Router} from 'express'
-import { tattooFindImage } from './controllers/images'
+import { tattooFindImage, getBotImages } from './controllers/images'
 import path from 'path'
 
 const htmlPath = path.join(__dirname, '../public/front/', 'index.html')
 const css = path.join(__dirname, '../public/front/', 'app.css')
-
-const moon = path.join(__dirname, '../public/', 'moon.png')
-const moon2 = path.join(__dirname, '../public/', 'moon-emoji.png')
-const rocket = path.join(__dirname, '../public/', 'rocket.png')
 
 const privacy = path.join(__dirname, '../public/front/', 'privacy-policy.html')
 
@@ -74,6 +70,9 @@ router.get('/audio/open', (req, res) => {
 
 // FRONT IMAGES
 router.get('/img/:name', tattooFindImage)
+
+// BOT IMAGES
+router.get('/bot/:name', tattooFindImage)
 
 
 export default router
