@@ -14,7 +14,6 @@ html,body{
   min-height: 100%;
   height: auto !important;
   margin-bottom: 55px;
-  font-family: "Molengo", Helvetica, arial, freesans, clean, sans-serif;
 }
 
 /*Page navigation bar*/
@@ -51,6 +50,7 @@ html,body{
   text-transform: uppercase;
   font-style: normal;
   font-size: 600;
+  color: #1E1D21;
 
 }
 /*One post*/
