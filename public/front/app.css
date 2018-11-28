@@ -52,9 +52,10 @@ html,body{
   font-size: 600;
   color: #1E1D21;
   transition: color 0.2s;
+  -webkit-transition: color 0.2s; /* Safari */
 }
 #navigation a:hover{
-  color: white;
+  color: #037CF4;
   text-decoration: underline;
 }
 /*One post*/
