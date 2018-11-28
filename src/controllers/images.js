@@ -3,7 +3,7 @@ const serverImagesPath = path.join(__dirname, '../../public/assets/images', 'fro
 
 const botImagesPath = path.join(__dirname, '../../public/assets/images', 'bot')
 
-export async function tattooFindImage (req, res) {
+export async function getFrontImages (req, res) {
     try{
         const options = await getFileOptions(serverImagesPath)
         const fileName = req.params.name

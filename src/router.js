@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import { tattooFindImage, getBotImages } from './controllers/images'
+import { getFrontImages, getBotImages } from './controllers/images'
 import path from 'path'
 
 const htmlPath = path.join(__dirname, '../public/front/', 'index.html')
@@ -69,10 +69,10 @@ router.get('/audio/open', (req, res) => {
 })
 
 // FRONT IMAGES
-router.get('/img/:name', tattooFindImage)
+router.get('/img/:name', getFrontImages)
 
 // BOT IMAGES
-router.get('/bot/:name', tattooFindImage)
+router.get('/bot/:name', getBotImages)
 
 
 export default router
