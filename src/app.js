@@ -4,6 +4,7 @@ import bodyParser from 'body-parser'
 import serveFavicon from 'serve-favicon'
 import path from 'path'
 import router from './router'
+import sslRedirect from 'heroku-ssl-redirect'
 
 /**
  * Start Express server.
@@ -14,7 +15,8 @@ const app = express()
  * Setup Express server.
  */
 // SSL
-// Ahoj
+app.use(sslRedirect())
+// PUBLIC
 app.use('/public', express.static(__dirname + '../public'))
 // BODY
 app.use(bodyParser.json())
