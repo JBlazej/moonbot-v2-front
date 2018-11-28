@@ -44,6 +44,13 @@ html,body{
   vertical-align: top;
 }
 
+#navigation a{
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.2s;
+
+}
 /*One post*/
 /*----------------------------------------------------------------------------*/
 .one-post section {
