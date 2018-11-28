@@ -45,10 +45,12 @@ html,body{
 }
 
 #navigation a{
-  padding: 5px;
+  padding: 7px;
   display: inline-block;
   text-decoration: none;
-  transition: color 0.2s;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 600;
 
 }
 /*One post*/
@@ -138,7 +140,7 @@ html,body{
 .iphone-screenshot{
   display: block;
   height: 540px;
-  width: 260px;
+  width: 243px;
   margin: 0 auto;
   margin-top: 60px;
   background-repeat: no-repeat;
