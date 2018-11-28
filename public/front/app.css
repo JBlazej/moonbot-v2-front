@@ -19,7 +19,7 @@ html,body{
 
 /*Page navigation bar*/
 /*----------------------------------------------------------------------------*/
-.top-bar{
+#nav-bar{
   text-align: center;
   padding: 8px 0;
   font-size: 14px;
@@ -27,37 +27,21 @@ html,body{
   background-color: #61B0E9;
 }
 
-.top-bar .navigator{
+#nav-bar #navigation{
   display: inline-block;
 }
 
-.navigator{
+#navigation{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.navigator li{
+#navigation li{
   display: inline-block;
   padding-right: 5px;
   height: 44px;
   vertical-align: top;
-}
-
-.navigator a{
-  padding: 5px;
-  display: inline-block;
-  text-decoration: none;
-  transition: color 0.2s;
-  -o-transform: color 0.2s;
-  -moz-transform: color 0.2s;
-  -webkit-transition: color 0.2s;
-
-}
-
-.navigator a:hover{
-  color: yellow;
-  text-decoration: underline;
 }
 
 /*One post*/
