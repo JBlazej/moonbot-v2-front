@@ -163,7 +163,7 @@ router.get('/img9', (req, res) => {
     res.status(200).sendFile(img9)
 })
 
-router.get('/img/:name', tattooFindImage(req, res))
+router.get('/img/:name', tattooFindImage)
 
 async function tattooFindImage (req, res){
     try{
