@@ -1,5 +1,5 @@
 import path from 'path'
-const serverImagesPath = path.join(__dirname, '../public/assets/images', 'front')
+const serverImagesPath = path.join(__dirname, '../../public/assets/images', 'front')
 
 export async function tattooFindImage (req, res) {
     try{
