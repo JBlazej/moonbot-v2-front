@@ -72,7 +72,7 @@ router.get('/audio/open', (req, res) => {
 router.get('/img/:name', getFrontImages)
 
 // BOT IMAGES
-router.get('/bot/:name', getBotImages)
+router.get('/v2/bot/:name', getBotImages)
 
 
 export default router
